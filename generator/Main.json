@@ -1,0 +1,73 @@
+{
+  "project-settings": {
+    "code-owner": "Angular App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "angularapp",
+    "model-interface-pkg": "com.angularapp.core.models",
+    "model-impl-pkg": "com.angularapp.core.models.impl"
+  },
+  "name": "main-component",
+  "title": "Main",
+  "group": "Angular App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "text",
+        "label": "Digite um texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text"
+      },
+      {
+        "field": "type",
+        "label": "Escolha o tipo de texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "type"
+      },
+      {
+        "field": "buttonType",
+        "label": "Escolha o tipo do botão",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "type"
+      },
+      {
+        "field": "buttonText",
+        "label": "Escolha o texto do botão",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text"
+      },
+      {
+        "field": "imageSrc",
+        "type": "image",
+        "label": "Imagem",
+        "json-expose": true,
+        "json-property": "imageSrc"
+      },
+      {
+        "field": "imageAlt",
+        "type": "textfield",
+        "label": "Texto alternativo",
+        "json-expose": true,
+        "json-property": "imageAlt"
+      }
+    ]
+  }
+}
