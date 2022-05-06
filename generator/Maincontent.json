@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.angularapp.core.models",
     "model-impl-pkg": "com.angularapp.core.models.impl"
   },
-  "name": "main-component",
-  "title": "Main",
+  "name": "maincontent-component",
+  "title": "Maincontent",
   "group": "Angular App - Content",
   "type": "components",
   "options": {
@@ -45,14 +45,14 @@
         "label": "Escolha o tipo do botão",
         "type": "textfield",
         "json-expose": true,
-        "json-property": "type"
+        "json-property": "buttonType"
       },
       {
         "field": "buttonText",
         "label": "Escolha o texto do botão",
         "type": "textfield",
         "json-expose": true,
-        "json-property": "text"
+        "json-property": "buttonText"
       },
       {
         "field": "imageSrc",
