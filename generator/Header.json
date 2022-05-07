@@ -27,18 +27,28 @@
     "generic-javadoc": false,
     "properties": [
       {
-        "field": "text",
+        "field": "attributes",
         "label": "Digite um texto",
-        "type": "textfield",
+        "type": "multifield",
         "json-expose": true,
-        "json-property": "text"
-      },
-      {
-        "field": "type",
-        "label": "Escolha o tipo de texto",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "type"
+        "model-name": "header",
+        "use-existing-model": false,
+        "items": [
+          {
+            "field": "type",
+            "label": "Escolha o tipo de texto",
+            "type": "textfield",
+            "json-expose": true,
+            "json-property": "type"
+          },
+          {
+            "field": "text",
+            "label": "Digite seu texto",
+            "type": "textfield",
+            "json-expose": true,
+            "json-property": "text"
+          }
+        ]
       }
     ]
   }

@@ -3,7 +3,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: "app-text",
-  styleUrls: ["./text.component.css"],
+  styleUrls: ["./text.component.scss"],
   templateUrl: "./text.component.html",
 })
 export class TextComponent {

@@ -1,0 +1,23 @@
+<div class="container">
+  <section>
+    <app-image
+      class="imagem"
+      [imageSrc]="imageSrc.src"
+      [imageAlt]="imageAlt"
+      [imageClass]="'scarcrow'"
+    ></app-image>
+  </section>
+  <section class="textSection">
+    <div *ngFor="let attribute of attributes">
+      <app-typograph
+        class="paragraph"
+        [type]="attribute.type"
+        [text]="attribute.text"
+      ></app-typograph>
+    </div>
+    <app-button
+      [buttonType]="buttonType"
+      [buttonText]="buttonText"
+    ></app-button>
+  </section>
+</div>

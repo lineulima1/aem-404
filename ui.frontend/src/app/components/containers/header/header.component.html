@@ -1,3 +1,9 @@
-<header>
-  <app-typograph class="paragraph" [type]="type" [text]="text"></app-typograph>
-</header>
+<div>
+  <header *ngFor="let attribute of attributes">
+    <app-typograph
+      class="paragraph"
+      [type]="attribute.type"
+      [text]="attribute.text"
+    ></app-typograph>
+  </header>
+</div>

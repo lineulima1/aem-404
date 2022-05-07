@@ -20,19 +20,33 @@ package com.angularapp.core.models;
 
 import java.util.List;
 import com.adobe.cq.export.json.ComponentExporter;
+import com.adobe.cq.wcm.core.components.models.Image;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code HeaderComponent} Sling Model used for the {@code angularapp/components/header-component} component.
+ * Defines the {@code MaincontentComponent} Sling Model used for the {@code angularapp/components/maincontent-component} component.
  * 
  */
 @ConsumerType
-public interface HeaderComponent
+public interface MaincontentComponent
     extends ComponentExporter
 {
 
 
     List<header> getAttributes();
+
+    @JsonProperty("buttonType")
+    String getButtonType();
+
+    @JsonProperty("buttonText")
+    String getButtonText();
+
+    @JsonProperty("imageSrc")
+    Image getImageSrc();
+
+    @JsonProperty("imageAlt")
+    String getImageAlt();
 
 }

@@ -5,7 +5,7 @@ import { ModelManagerService } from "../model-manager.service";
 
 @Component({
   selector: "app-page",
-  styleUrls: ["./page.component.css"],
+  styleUrls: ["./page.component.scss"],
   templateUrl: "./page.component.html",
 })
 export class PageComponent {

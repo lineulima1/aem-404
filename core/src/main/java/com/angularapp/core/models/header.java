@@ -18,21 +18,25 @@
 
 package com.angularapp.core.models;
 
-import java.util.List;
 import com.adobe.cq.export.json.ComponentExporter;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code HeaderComponent} Sling Model used for the {@code angularapp/components/header-component} component.
+ * Defines the {@code header} Sling Model used for the multifield in {@code angularapp/components/header-component} component.
  * 
  */
 @ConsumerType
-public interface HeaderComponent
+public interface header
     extends ComponentExporter
 {
 
 
-    List<header> getAttributes();
+    @JsonProperty("type")
+    String getType();
+
+    @JsonProperty("text")
+    String getText();
 
 }

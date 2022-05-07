@@ -1,14 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"], {
   /***/
-  "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles.css":
-  /*!*********************************************************************************************************************!*\
-    !*** ./node_modules/css-loader/dist/cjs.js??ref--12-1!./node_modules/postcss-loader/src??embedded!./src/styles.css ***!
-    \*********************************************************************************************************************/
+  "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/styles.scss":
+  /*!************************************************************************************************************************************************************************!*\
+    !*** ./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/dist/cjs.js??ref--13-3!./src/styles.scss ***!
+    \************************************************************************************************************************************************************************/
 
   /*! no static exports found */
 
   /***/
-  function node_modulesCssLoaderDistCjsJsNode_modulesPostcssLoaderSrcIndexJsSrcStylesCss(module, exports, __webpack_require__) {
+  function node_modulesCssLoaderDistCjsJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesSassLoaderDistCjsJsSrcStylesScss(module, exports, __webpack_require__) {
     // Imports
     var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(
     /*! ../node_modules/css-loader/dist/runtime/api.js */
@@ -17,13 +17,13 @@
     exports = ___CSS_LOADER_API_IMPORT___(true);
     exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap);"]); // Module
 
-    exports.push([module.i, "\n/* You can add global styles to this file, and also import other style files */\nhtml,\nbody {\n  border: 0;\n  font: inherit;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  vertical-align: baseline;\n}\nbody {\n  background-color: #ffffff;\n}\n", "", {
+    exports.push([module.i, "\n/* You can add global styles to this file, and also import other style files */\nhtml,\nbody {\n  border: 0;\n  font: inherit;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  vertical-align: baseline;\n}\nbody {\n  background-color: #ffffff;\n}", "", {
       "version": 3,
-      "sources": ["styles.css"],
+      "sources": ["C:\\Users\\lineu.lima\\AEM\\aem.angular.basic\\ui.frontend/src\\styles.scss", "styles.scss"],
       "names": [],
-      "mappings": ";AAAA,8EAA8E;AAG9E;;EAEE,SAAS;EACT,aAAa;EACb,eAAe;EACf,SAAS;EACT,UAAU;EACV,wBAAwB;AAC1B;AAEA;EACE,yBAAyB;AAC3B",
-      "file": "styles.css",
-      "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\n@import url(\"https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap\");\n\nhtml,\nbody {\n  border: 0;\n  font: inherit;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  vertical-align: baseline;\n}\n\nbody {\n  background-color: #ffffff;\n}\n"]
+      "mappings": ";AAAA,8EAAA;AAGA;;EAEE,SAAA;EACA,aAAA;EACA,eAAA;EACA,SAAA;EACA,UAAA;EACA,wBAAA;ACAF;ADGA;EACE,yBAAA;ACAF",
+      "file": "styles.scss",
+      "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\n@import url(\"https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap\");\n\nhtml,\nbody {\n  border: 0;\n  font: inherit;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  vertical-align: baseline;\n}\n\nbody {\n  background-color: #ffffff;\n}\n", "/* You can add global styles to this file, and also import other style files */\n@import url(\"https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap\");\nhtml,\nbody {\n  border: 0;\n  font: inherit;\n  font-size: 100%;\n  margin: 0;\n  padding: 0;\n  vertical-align: baseline;\n}\n\nbody {\n  background-color: #ffffff;\n}"]
     }]); // Exports
 
     module.exports = exports;
@@ -422,22 +422,22 @@
   },
 
   /***/
-  "./src/styles.css":
-  /*!************************!*\
-    !*** ./src/styles.css ***!
-    \************************/
+  "./src/styles.scss":
+  /*!*************************!*\
+    !*** ./src/styles.scss ***!
+    \*************************/
 
   /*! no static exports found */
 
   /***/
-  function srcStylesCss(module, exports, __webpack_require__) {
+  function srcStylesScss(module, exports, __webpack_require__) {
     var api = __webpack_require__(
     /*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
     "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 
     var content = __webpack_require__(
-    /*! !../node_modules/css-loader/dist/cjs.js??ref--12-1!../node_modules/postcss-loader/src??embedded!./styles.css */
-    "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles.css");
+    /*! !../node_modules/css-loader/dist/cjs.js??ref--13-1!../node_modules/postcss-loader/src??embedded!../node_modules/sass-loader/dist/cjs.js??ref--13-3!./styles.scss */
+    "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./src/styles.scss");
 
     content = content.__esModule ? content["default"] : content;
 
@@ -456,17 +456,17 @@
 
   /***/
   3:
-  /*!******************************!*\
-    !*** multi ./src/styles.css ***!
-    \******************************/
+  /*!*******************************!*\
+    !*** multi ./src/styles.scss ***!
+    \*******************************/
 
   /*! no static exports found */
 
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\lineu.lima\AEM\aem.angular.basic\ui.frontend\src\styles.css */
-    "./src/styles.css");
+    /*! C:\Users\lineu.lima\AEM\aem.angular.basic\ui.frontend\src\styles.scss */
+    "./src/styles.scss");
     /***/
   }
 }, [[3, "runtime"]]]);

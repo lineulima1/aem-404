@@ -4,7 +4,7 @@ import { Constants } from "@adobe/aem-angular-editable-components";
 import { Component, OnInit, Input } from "@angular/core";
 @Component({
   selector: "#spa-root", // tslint:disable-line
-  styleUrls: ["./app.component.css"],
+  styleUrls: ["./app.component.scss"],
   templateUrl: "./app.component.html",
 })
 export class AppComponent {

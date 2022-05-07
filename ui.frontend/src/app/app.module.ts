@@ -26,7 +26,7 @@ import { TypographComponent } from "./components/micro/typograph/typograph.compo
 import { ButtonComponent } from "./components/micro/button/button.component";
 import { HeaderComponent } from "./components/containers/header/header.component";
 import { ImageComponent } from "./components/micro/image/image.component";
-import { MainComponent } from "./components/containers/main/main.component";
+import { MaincontentComponent } from "./components/containers/maincontent/maincontent.component";
 
 @NgModule({
   imports: [
@@ -53,9 +53,9 @@ import { MainComponent } from "./components/containers/main/main.component";
     ButtonComponent,
     HeaderComponent,
     ImageComponent,
-    MainComponent,
+    MaincontentComponent,
   ],
-  entryComponents: [PageComponent, HeaderComponent],
+  entryComponents: [PageComponent, HeaderComponent, MaincontentComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

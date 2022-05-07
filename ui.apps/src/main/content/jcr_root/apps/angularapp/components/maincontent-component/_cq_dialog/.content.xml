@@ -22,7 +22,7 @@
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Header"
+          jcr:title="Maincontent"
           sling:resourceType="cq/gui/components/authoring/dialog">
    <content jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -53,6 +53,40 @@
                      </items>
                   </field>
                </attributes>
+               <buttonType cq-msm-lockable="./buttonType"
+                           fieldLabel="Escolha o tipo do botão"
+                           jcr:primaryType="nt:unstructured"
+                           name="./buttonType"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <buttonText cq-msm-lockable="./buttonText"
+                           fieldLabel="Escolha o texto do botão"
+                           jcr:primaryType="nt:unstructured"
+                           name="./buttonText"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <imageSrcResType jcr:primaryType="nt:unstructured"
+                                name="./imageSrc/sling:resourceType"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                value="core/wcm/components/image/v2/image"/>
+               <imageSrc allowUpload="{Boolean}false"
+                         autoStart="{Boolean}false"
+                         class="cq-droptarget"
+                         cq-msm-lockable="./imageSrc/file"
+                         fieldLabel="Imagem"
+                         fileNameParameter="./imageSrc/fileName"
+                         fileReferenceParameter="./imageSrc/fileReference"
+                         jcr:primaryType="nt:unstructured"
+                         mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                         multiple="{Boolean}false"
+                         name="./imageSrc/file"
+                         sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                         title="Drag to select image"
+                         uploadUrl="${suffix.path}"
+                         useHTML5="{Boolean}true"/>
+               <imageAlt cq-msm-lockable="./imageAlt"
+                         fieldLabel="Texto alternativo"
+                         jcr:primaryType="nt:unstructured"
+                         name="./imageAlt"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
             </items>
          </column>
       </items>
