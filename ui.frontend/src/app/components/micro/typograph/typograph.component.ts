@@ -7,7 +7,10 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class TypographComponent implements OnInit {
   @Input() text: string;
-  @Input() type: string;
+  @Input() color: string;
+  @Input() fontSize: string;
+  @Input() textAlign: string;
+  @Input() lineHeight: string;
   constructor() {}
 
   ngOnInit(): void {}

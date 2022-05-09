@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from "@angular/core";
   styleUrls: ["./maincontent.component.scss"],
 })
 export class MaincontentComponent implements OnInit {
-  @Input() attributes: [];
+  @Input() itens: [];
   @Input() imageSrc: object;
   @Input() imageAlt: string;
   @Input() buttonText: string;

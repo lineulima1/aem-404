@@ -1,14 +1,13 @@
 header {
-  width: 100%;
   display: flex;
   justify-content: flex-start;
-  height: 25px;
+  width: 80%;
+  margin: 0 0 0vw 15vw;
   font-family: "Inconsolata";
-  font-weight: 700;
-  font-size: 16px;
   letter-spacing: -0.08em;
   text-transform: uppercase;
-}
-.paragraph {
-  margin-left: 8vw;
+  @media all and (max-width: 768px) {
+    margin-left: 5vw !important;
+    margin-bottom: 13vw !important;
+  }
 }

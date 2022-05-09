@@ -27,6 +27,7 @@ import { ButtonComponent } from "./components/micro/button/button.component";
 import { HeaderComponent } from "./components/containers/header/header.component";
 import { ImageComponent } from "./components/micro/image/image.component";
 import { MaincontentComponent } from "./components/containers/maincontent/maincontent.component";
+import { FooterComponent } from "./components/containers/footer/footer.component";
 
 @NgModule({
   imports: [
@@ -54,8 +55,14 @@ import { MaincontentComponent } from "./components/containers/maincontent/mainco
     HeaderComponent,
     ImageComponent,
     MaincontentComponent,
+    FooterComponent,
   ],
-  entryComponents: [PageComponent, HeaderComponent, MaincontentComponent],
+  entryComponents: [
+    PageComponent,
+    HeaderComponent,
+    MaincontentComponent,
+    FooterComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

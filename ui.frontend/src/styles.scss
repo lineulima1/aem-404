@@ -13,4 +13,18 @@ body {
 
 body {
   background-color: #ffffff;
+  blockquote {
+    text-align: center;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+.container p {
+  line-height: 5px !important;
+}
+.container h1 {
+  line-height: 40px !important;
+  margin-bottom: 2vw !important;
+  max-width: 350px !important;
 }

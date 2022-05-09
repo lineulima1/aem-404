@@ -1,4 +1,8 @@
 .scarcrow {
-  height: 400px;
-  width: 40vw;
+  height: 250px;
+  width: 30vw;
+  @media all and (max-width: 768px) {
+    height: 200px;
+    width: 100%;
+  }
 }

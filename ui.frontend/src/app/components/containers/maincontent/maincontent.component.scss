@@ -3,14 +3,34 @@
   height: 500px;
   align-items: flex-start;
   justify-content: center;
-  gap: 4vw;
-  span {
-    color: red;
+  font-family: "Space Mono";
+  letter-spacing: -0.035em;
+  @media all and (max-width: 768px) {
+    flex-direction: column;
   }
 }
-.textSection {
+.text-section {
+  margin-left: 5vw;
+  margin-top: 8vw;
+  @media all and (max-width: 768px) {
+    margin-top: 0 !important;
+  }
+}
+.btn-section {
+  margin-top: 4vw;
+  @media all and (max-width: 768px) {
+    margin-top: 18vw !important;
+    margin-bottom: 18vw !important;
+  }
+}
+.imagem-section {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3vw;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin-right: 5vw;
+  @media all and (max-width: 768px) {
+    height: 200px;
+    width: 100%;
+  }
 }

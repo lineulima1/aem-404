@@ -1,5 +1,5 @@
 <div class="container">
-  <section>
+  <section class="imagem-section">
     <app-image
       class="imagem"
       [imageSrc]="imageSrc.src"
@@ -7,17 +7,20 @@
       [imageClass]="'scarcrow'"
     ></app-image>
   </section>
-  <section class="textSection">
-    <div *ngFor="let attribute of attributes">
+  <section class="text-section">
+    <div *ngFor="let item of itens">
       <app-typograph
-        class="paragraph"
-        [type]="attribute.type"
-        [text]="attribute.text"
+        [text]="item.text"
+        [fontSize]="item.fontSize"
+        [color]="item.color"
+        [lineHeight]="item.lineHeight"
       ></app-typograph>
     </div>
-    <app-button
-      [buttonType]="buttonType"
-      [buttonText]="buttonText"
-    ></app-button>
+    <div class="btn-section">
+      <app-button
+        [buttonType]="buttonType"
+        [buttonText]="buttonText"
+      ></app-button>
+    </div>
   </section>
 </div>
