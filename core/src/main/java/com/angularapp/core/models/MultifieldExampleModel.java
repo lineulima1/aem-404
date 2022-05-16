@@ -18,35 +18,28 @@
 
 package com.angularapp.core.models;
 
-import java.util.List;
 import com.adobe.cq.export.json.ComponentExporter;
-import com.adobe.cq.wcm.core.components.models.Image;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code MaincontentComponent} Sling Model used for the {@code angularapp/components/maincontent-component} component.
+ * Defines the {@code MultifieldExampleModel} Sling Model used for the multifield in {@code angularapp/components/maincontent-component} component.
  * 
  */
 @ConsumerType
-public interface MaincontentComponent
+public interface MultifieldExampleModel
     extends ComponentExporter
 {
 
 
-    List<MultifieldExampleModel> getItens();
+    @JsonProperty("text")
+    String getText();
 
-    @JsonProperty("buttonType")
-    String getButtonType();
+    @JsonProperty("color")
+    String getColor();
 
-    @JsonProperty("buttonText")
-    String getButtonText();
-
-    @JsonProperty("imageSrc")
-    Image getImageSrc();
-
-    @JsonProperty("imageAlt")
-    String getImageAlt();
+    @JsonProperty("fontSize")
+    String getFontSize();
 
 }

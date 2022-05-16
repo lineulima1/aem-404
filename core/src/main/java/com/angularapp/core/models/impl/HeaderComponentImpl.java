@@ -18,19 +18,17 @@
 
 package com.angularapp.core.models.impl;
 
-import java.util.Collections;
-import java.util.List;
-import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
 import com.angularapp.core.models.HeaderComponent;
-import com.angularapp.core.models.header;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = {
     SlingHttpServletRequest.class
@@ -43,14 +41,15 @@ public class HeaderComponentImpl
     implements HeaderComponent
 {
 
-    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private List<header> attributes;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String text;
     @SlingObject
     private Resource resource;
 
     @Override
-    public List<header> getAttributes() {
-        return attributes != null ? Collections.unmodifiableList(attributes) : null;
+    @JsonProperty("text")
+    public String getText() {
+        return text;
     }
 
     @Override

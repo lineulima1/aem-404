@@ -24,19 +24,25 @@ import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code header} Sling Model used for the multifield in {@code angularapp/components/header-component} component.
+ * Defines the {@code FooterComponent} Sling Model used for the {@code angularapp/components/footer-component} component.
  * 
  */
 @ConsumerType
-public interface header
+public interface FooterComponent
     extends ComponentExporter
 {
 
 
-    @JsonProperty("type")
-    String getType();
-
     @JsonProperty("text")
     String getText();
+
+    @JsonProperty("color")
+    String getColor();
+
+    @JsonProperty("fontSize")
+    String getFontSize();
+
+    @JsonProperty("textAlign")
+    String getTextAlign();
 
 }

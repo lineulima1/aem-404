@@ -24,19 +24,19 @@ import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code header} Sling Model used for the multifield in {@code angularapp/components/maincontent-component} component.
+ * Defines the {@code ArticleComponent} Sling Model used for the {@code angularapp/components/article-component} component.
  * 
  */
 @ConsumerType
-public interface header
+public interface ArticleComponent
     extends ComponentExporter
 {
 
 
-    @JsonProperty("type")
-    String getType();
-
     @JsonProperty("text")
     String getText();
+
+    @JsonProperty("color")
+    String getColor();
 
 }

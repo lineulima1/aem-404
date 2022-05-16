@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-05-16T04:38:20.777-03:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="login"
+        sling:resourceType="angularapp/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2018-10-22T16:48:57.968+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-10-22T16:49:29.168+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <home_component
+                    jcr:created="{Date}2022-05-14T20:11:54.552-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-05-16T04:38:20.772-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/home-component"
+                    text="&lt;h3>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Our mission is&lt;/h3>&#xd;&#xa;&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Nossa missão é&lt;/p>&#xd;&#xa;&lt;h2>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; to transform the world&lt;/h2>&#xd;&#xa;&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; transformar o mundo&lt;/p>&#xd;&#xa;&lt;h2>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; building digital experiences&lt;/h2>&#xd;&#xa;&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; construindo experiencias digitais&lt;/p>&#xd;&#xa;&lt;h2>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;that enable our client's growth&lt;/h2>&#xd;&#xa;&lt;p>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;que permitam o crescimento de nossos clientes&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                    textAplication="Application refresh in"
+                    textContinue="Continuar Navegando"
+                    textFooter="Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar."
+                    textIsRich="true"
+                    textLogout="Logout">
+                    <MyImageSrc
+                        jcr:lastModified="{Date}2022-05-14T20:12:30.191-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="core/wcm/components/image/v2/image"
+                        fileReference="/content/dam/angularapp/compassuol-logo-white 1.png"/>
+                    <myImageSrc
+                        jcr:lastModified="{Date}2022-05-16T04:38:20.772-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"/>
+                    <imagens jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            myClass="logo"
+                            myImageAlt="logo">
+                            <myImageSrc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="core/wcm/components/image/v2/image"
+                                fileReference="/content/dam/angularapp/compassuol-logo-white 1.png"/>
+                        </item0>
+                    </imagens>
+                    <imagensHome jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            myClass="logo"
+                            myImageAlt="logo">
+                            <myImageSrc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="core/wcm/components/image/v2/image"
+                                fileReference="/content/dam/angularapp/compassuol-logo-black.png"/>
+                        </item0>
+                    </imagensHome>
+                    <imagensBody jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            myClass="logoBody"
+                            myImageAlt="logo">
+                            <myImageSrc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="core/wcm/components/image/v2/image"
+                                fileReference="/content/dam/angularapp/uol-ball-transparent 1.png"/>
+                        </item0>
+                    </imagensBody>
+                </home_component>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -28,6 +28,8 @@ import { HeaderComponent } from "./components/containers/header/header.component
 import { ImageComponent } from "./components/micro/image/image.component";
 import { MaincontentComponent } from "./components/containers/maincontent/maincontent.component";
 import { FooterComponent } from "./components/containers/footer/footer.component";
+import { ParagraphComponent } from "./components/micro/paragraph/paragraph.component";
+import { ArticleComponent } from "./components/containers/article/article.component";
 
 @NgModule({
   imports: [
@@ -56,12 +58,15 @@ import { FooterComponent } from "./components/containers/footer/footer.component
     ImageComponent,
     MaincontentComponent,
     FooterComponent,
+    ParagraphComponent,
+    ArticleComponent,
   ],
   entryComponents: [
     PageComponent,
     HeaderComponent,
     MaincontentComponent,
     FooterComponent,
+    ArticleComponent,
   ],
   bootstrap: [AppComponent],
 })

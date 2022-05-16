@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 0 0 0vw 15vw;
+  font-family: "Inconsolata";
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  @media all and (max-width: 768px) {
+    margin-left: 5vw !important;
+    margin-bottom: 13vw !important;
+  }
+}

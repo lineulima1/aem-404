@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-06T12:25:57.055-03:00"
+        cq:lastModified="{Date}2022-04-02T20:48:18.984-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/angularapp/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -17,6 +17,20 @@
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
+                <title
+                    jcr:created="{Date}2022-04-02T19:14:09.239-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-02T19:14:09.239-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/title"/>
+                <separator
+                    jcr:created="{Date}2022-04-02T19:15:50.450-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-02T19:15:50.450-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="angularapp/components/separator"/>
                 <basic_component
                     jcr:created="{Date}2022-04-02T20:41:01.020-03:00"
                     jcr:createdBy="admin"
@@ -25,22 +39,6 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="angularapp/components/basic-component"
                     text="ARTURY"/>
-                <header_component
-                    jcr:created="{Date}2022-05-05T16:53:52.083-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-05T16:54:17.478-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="angularapp/components/header-component"
-                    text="404 Not Found"
-                    type="p"/>
-                <main_component
-                    jcr:created="{Date}2022-05-06T11:08:24.040-03:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-06T11:08:24.040-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="angularapp/components/main-component"/>
             </responsivegrid>
         </root>
         <image jcr:primaryType="nt:unstructured">

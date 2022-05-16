@@ -18,14 +18,9 @@
 
 package com.angularapp.core.models.impl;
 
-import java.util.Collections;
-import java.util.List;
-import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
-import com.adobe.cq.wcm.core.components.models.Image;
-import com.angularapp.core.models.MaincontentComponent;
-import com.angularapp.core.models.MultifieldExampleModel;
+import com.angularapp.core.models.ArticleComponent;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -38,54 +33,31 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 @Model(adaptables = {
     SlingHttpServletRequest.class
 }, adapters = {
-    MaincontentComponent.class,
+    ArticleComponent.class,
     ComponentExporter.class
-}, resourceType = "angularapp/components/maincontent-component")
+}, resourceType = "angularapp/components/article-component")
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
-public class MaincontentComponentImpl
-    implements MaincontentComponent
+public class ArticleComponentImpl
+    implements ArticleComponent
 {
 
-    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private List<MultifieldExampleModel> itens;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String buttonType;
+    private String text;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String buttonText;
-    @ChildResourceFromRequest(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private Image imageSrc;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String imageAlt;
+    private String color;
     @SlingObject
     private Resource resource;
 
     @Override
-    public List<MultifieldExampleModel> getItens() {
-        return itens != null ? Collections.unmodifiableList(itens) : null;
+    @JsonProperty("text")
+    public String getText() {
+        return text;
     }
 
     @Override
-    @JsonProperty("buttonType")
-    public String getButtonType() {
-        return buttonType;
-    }
-
-    @Override
-    @JsonProperty("buttonText")
-    public String getButtonText() {
-        return buttonText;
-    }
-
-    @Override
-    @JsonProperty("imageSrc")
-    public Image getImageSrc() {
-        return imageSrc;
-    }
-
-    @Override
-    @JsonProperty("imageAlt")
-    public String getImageAlt() {
-        return imageAlt;
+    @JsonProperty("color")
+    public String getColor() {
+        return color;
     }
 
     @Override

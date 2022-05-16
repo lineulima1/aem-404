@@ -20,7 +20,7 @@ package com.angularapp.core.models.impl;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
-import com.angularapp.core.models.header;
+import com.angularapp.core.models.FooterComponent;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -33,31 +33,47 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 @Model(adaptables = {
     SlingHttpServletRequest.class
 }, adapters = {
-    header.class,
+    FooterComponent.class,
     ComponentExporter.class
-})
+}, resourceType = "angularapp/components/footer-component")
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
-public class headerImpl
-    implements header
+public class FooterComponentImpl
+    implements FooterComponent
 {
 
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String type;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String text;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String color;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String fontSize;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textAlign;
     @SlingObject
     private Resource resource;
-
-    @Override
-    @JsonProperty("type")
-    public String getType() {
-        return type;
-    }
 
     @Override
     @JsonProperty("text")
     public String getText() {
         return text;
+    }
+
+    @Override
+    @JsonProperty("color")
+    public String getColor() {
+        return color;
+    }
+
+    @Override
+    @JsonProperty("fontSize")
+    public String getFontSize() {
+        return fontSize;
+    }
+
+    @Override
+    @JsonProperty("textAlign")
+    public String getTextAlign() {
+        return textAlign;
     }
 
     @Override

@@ -27,26 +27,68 @@
     "generic-javadoc": false,
     "properties": [
       {
-        "field": "attributes",
-        "label": "Digite um texto",
+        "field": "itens",
         "type": "multifield",
-        "json-expose": true,
-        "model-name": "header",
+        "model-name": "MultifieldExampleModel",
         "use-existing-model": false,
+        "label": "Input Type",
+        "json-expose": true,
         "items": [
           {
-            "field": "type",
-            "label": "Escolha o tipo de texto",
-            "type": "textfield",
-            "json-expose": true,
-            "json-property": "type"
-          },
-          {
             "field": "text",
-            "label": "Digite seu texto",
             "type": "textfield",
+            "label": "Tipo de Input",
             "json-expose": true,
             "json-property": "text"
+          },
+          {
+            "field": "color",
+            "label": "Escolha a cor do seu texto",
+            "type": "textfield",
+            "json-expose": true,
+            "json-property": "color"
+          },
+          {
+            "field": "fontSize",
+            "type": "select",
+            "label": "Selecione o tamanho da fonte (em pixels)",
+            "json-property": "fontSize",
+            "json-expose": true,
+            "attributes": {
+              "defaultValue": "opt1",
+              "value": "8px"
+            },
+            "items": [
+              {
+                "field": "option1",
+                "attributes": {
+                  "selected": "true",
+                  "text": "8 pixels",
+                  "value": "8px"
+                }
+              },
+              {
+                "field": "option2",
+                "attributes": {
+                  "text": "16 pixels",
+                  "value": "16px"
+                }
+              },
+              {
+                "field": "option3",
+                "attributes": {
+                  "text": "24 pixels",
+                  "value": "24px"
+                }
+              },
+              {
+                "field": "option4",
+                "attributes": {
+                  "text": "32 pixels",
+                  "value": "32px"
+                }
+              }
+            ]
           }
         ]
       },

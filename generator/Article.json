@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.angularapp.core.models",
     "model-impl-pkg": "com.angularapp.core.models.impl"
   },
-  "name": "header-component",
-  "title": "Header",
+  "name": "article-component",
+  "title": "Article",
   "group": "Angular App - Content",
   "type": "components",
   "options": {
@@ -32,6 +32,13 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "text"
+      },
+      {
+        "field": "color",
+        "label": "Escolha sua cor",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "color"
       }
     ]
   }

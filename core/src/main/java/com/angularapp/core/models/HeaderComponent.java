@@ -18,8 +18,8 @@
 
 package com.angularapp.core.models;
 
-import java.util.List;
 import com.adobe.cq.export.json.ComponentExporter;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
 
@@ -33,6 +33,7 @@ public interface HeaderComponent
 {
 
 
-    List<header> getAttributes();
+    @JsonProperty("text")
+    String getText();
 
 }

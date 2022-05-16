@@ -1,0 +1,129 @@
+{
+  "project-settings": {
+    "code-owner": "Angular App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "angularapp",
+    "model-interface-pkg": "com.angularapp.core.models",
+    "model-impl-pkg": "com.angularapp.core.models.impl"
+  },
+  "name": "footer-component",
+  "title": "Footer",
+  "group": "Angular App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "text",
+        "label": "Digite seu texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "text"
+      },
+      {
+        "field": "color",
+        "label": "Escolha a cor do seu texto",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "color"
+      },
+      {
+        "field": "fontSize",
+        "type": "select",
+        "label": "Selecione o tamanho da fonte (em pixels)",
+        "json-property": "fontSize",
+        "json-expose": true,
+        "attributes": {
+          "defaultValue": "opt1",
+          "value": "8px"
+        },
+        "items": [
+          {
+            "field": "option1",
+            "attributes": {
+              "selected": "true",
+              "text": "8 pixels",
+              "value": "8px"
+            }
+          },
+          {
+            "field": "option2",
+            "attributes": {
+              "text": "16 pixels",
+              "value": "16px"
+            }
+          },
+          {
+            "field": "option3",
+            "attributes": {
+              "text": "24 pixels",
+              "value": "24px"
+            }
+          },
+          {
+            "field": "option4",
+            "attributes": {
+              "text": "32 pixels",
+              "value": "32px"
+            }
+          }
+        ]
+      },
+      {
+        "field": "textAlign",
+        "type": "select",
+        "label": "Selecione o alinhamento do texto",
+        "json-property": "textAlign",
+        "json-expose": true,
+        "attributes": {
+          "defaultValue": "opt1",
+          "value": "left"
+        },
+        "items": [
+          {
+            "field": "option1",
+            "attributes": {
+              "selected": "true",
+              "text": "Á esquerda",
+              "value": "left"
+            }
+          },
+          {
+            "field": "option2",
+            "attributes": {
+              "text": "Ao centro",
+              "value": "center"
+            }
+          },
+          {
+            "field": "option3",
+            "attributes": {
+              "text": "Á direita",
+              "value": "right"
+            }
+          },
+          {
+            "field": "option4",
+            "attributes": {
+              "text": "Justificado",
+              "value": "justify"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

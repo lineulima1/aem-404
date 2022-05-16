@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
+    <_x0034_04/>
+    <home1/>
     <jcr:content
         cq:template="/conf/angularapp/settings/wcm/templates/spa-app-template"
         jcr:primaryType="cq:PageContent"
@@ -8,5 +10,4 @@
         sling:resourceType="angularapp/components/spa"
         pageTitle="Angular App"/>
     <home/>
-    <_x0034_04/>
 </jcr:root>
